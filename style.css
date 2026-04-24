@@ -1,6 +1,6 @@
 body {
     text-align:center;
-    background-color:rgb(212, 248, 245);
+    background-color:rgb(206, 245, 242);
     font-family:"Arial",sans-serif;
 }
 h1{
@@ -16,7 +16,7 @@ button{
     cursor: pointer;
 }
 button:hover{
-    background-color: #b96889;
+    background-color: #d383a3;
 }
 .result{
     margin-top:20px;
