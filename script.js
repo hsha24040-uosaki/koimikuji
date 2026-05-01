@@ -5,7 +5,6 @@ const fortunes=[
     "中吉　少し勇気を出すといいことが起きる",
     "小吉　今日はゆっくり過ごそう",
     "凶　無理せず慎重に行動しよう",
-    "五条悟　勝つさ"
 ];
 
 const button = document.getElementById("kodama");
@@ -18,3 +17,8 @@ button.addEventListener("click", function(){
 });
 
 "5pfdibe3"
+
+if (result.textContent === fortunes[0]) {
+    // Do something special for the first fortune
+    result.style.color = "red";
+}
