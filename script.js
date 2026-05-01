@@ -9,16 +9,20 @@ const fortunes=[
 
 const button = document.getElementById("kodama");
 const result = document.getElementById("kodaman");
+const advice = document.getElementById("advice");
 
 button.addEventListener("click", function(){
     const randomNumber = Math.floor(Math.random() * fortunes.length);
 
+    const resultText = fortunes[(randomNumber)];
+
+
     result.textContent = fortunes[(randomNumber)];
+    if (resultText.includes("大吉")){
+        result.style.color = "purple"; 
+    } else if (resultText.includes("小吉")){
+        result.style.color = "blue"; 
+    } else {
+        result.style.color = "black";
+    }
 });
-
-"5pfdibe3"
-
-if (result.textContent === fortunes[0]) {
-    // Do something special for the first fortune
-    result.style.color = "red";
-}
