@@ -13,13 +13,13 @@ const advice = document.getElementById("advice");
 
 button.addEventListener("click", function(){
     const randomNumber = Math.floor(Math.random() * fortunes.length);
-
     const resultText = fortunes[(randomNumber)];
 
-
     result.textContent = fortunes[(randomNumber)];
+
     if (resultText.includes("大吉")){
-        result.style.color = "purple"; 
+        result.style.color = "purple"
+        advice.textContent = "いいですね。とても"; 
     } else if (resultText.includes("小吉")){
         result.style.color = "blue"; 
     } else {
