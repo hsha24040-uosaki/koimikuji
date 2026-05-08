@@ -29,10 +29,11 @@ button.addEventListener("click", function(){
         advice.textContent = ""
         omikujiImg.innerHTML ="<img src='happysyo.png'>";
     }else if (resultText.includes("凶")){
-        result.style.color = "green"
+        result.style.color = "black"
         advice.textContent = ""
         omikujiImg.innerHTML ="<img src='happykyo.png'>";
     }else if (resultText.includes("中吉")){
+        result.style.color = "green"
         omikujiImg.innerHTML ="<img src='happytyu.png'>"
         advice.textContent = "";
     }else if (resultText.includes("吉")){
